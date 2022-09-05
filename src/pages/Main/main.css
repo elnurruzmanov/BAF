@@ -64,6 +64,7 @@ input[type="range"][orient="vertical"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top:45px;
 }
 
 .header-info {
@@ -115,20 +116,87 @@ input[type="range"][orient="vertical"] {
   width: 8%;
 }
 
-.download-catalog{
+.download-catalog {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  margin-top:45px;
 }
 
-.download-btn{
+.download-btn {
   display: flex;
   align-items: center;
   margin: 0px 10px;
+  background: #5b8a8d;
+  border: none;
+  /* opacity: 0.4; */
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.download-btn2 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  background: #2d5a5e;
+  border: none;
+  /* opacity: 0.4; */
+  border-radius: 50px;
+}
+
+.download-text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-right: 10px;
+  margin-right: 13px;
 }
 
 .downloads {
-  background: #ffebe2;
   border-radius: 50px;
-  padding:10px  20px;
+  padding: 15px 25px;
   margin-right: 10px;
+}
+
+.download-btn:hover {
+  background: #4e7679;
+  transform: scale(1);
+}
+
+.downloads2 {
+  background: #ffebe2;
+}
+
+.download-btn:hover {
+  cursor: pointer;
+}
+
+.header-link {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.languages-item {
+  margin: 15px 0px;
+  text-decoration: underline 2px;
+  transition: transform 1s;
+}
+
+.languages-item:hover {
+  transform: scale(1.5);
+  color: #ffffff;
+}
+
+.download-links{
+  color:#fff;
 }

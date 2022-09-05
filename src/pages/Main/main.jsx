@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "./main.css";
 //react-router-dom
 import { Link } from "react-router-dom";
+
+//react-download-link
+// import DownloadLink from "react-download-link";
+import ReactPlayer from "react-player";
 
 //import images
 import Image from "../../images/image.png";
@@ -11,6 +15,17 @@ import Downloads from "../../images/download.png";
 import Video from "../../images/Video.png";
 
 const Main = () => {
+  const downloadTxtFile = () => {
+    const texts = ["line 1", "line 2", "line 3"]
+    const file = new Blob(texts, {type: 'text/plain'});
+    const element = document.createElement("a");
+    element.href = URL.createObjectURL(file);
+    element.download = "100ideas-" + Date.now() + ".txt";
+    document.body.appendChild(element); 
+    element.click();
+
+    
+}
   return (
     <>
       <main className="main">
@@ -57,14 +72,17 @@ const Main = () => {
               <h3 className="header-text">
                 востребованное направление бизнеса
               </h3>
-              <div className="">
-                <button className="download-btn">
-                  <img src={Downloads} alt="" className="downloads" />
+              <div className="download-catalog">
+                <button className="download-btn download-btn2" id="downloadBtn" value="download" onClick={downloadTxtFile} >
+               
+                  <img src={Downloads} alt="" className="downloads downloads2" />
+                   
+       
                   <p className="download-text">Скачать каталог</p>
                 </button>
                 <button className="download-btn">
                   <img src={Video} alt="" className="downloads" />
-                  <p className="download-text">Скачать каталог</p>
+                  <p className="download-text">Смотреть ролик</p>
                 </button>
               </div>
             </div>
@@ -72,7 +90,17 @@ const Main = () => {
             <ul className="languages-list">
               <li className="languages-item">
                 <Link className="header-link" to="/">
-                  Eng
+                  UZB
+                </Link>
+              </li>
+              <li className="languages-item">
+                <Link className="header-link" to="/">
+                  RU
+                </Link>
+              </li>
+              <li className="languages-item">
+                <Link className="header-link" to="/">
+                  ENG
                 </Link>
               </li>
             </ul>
