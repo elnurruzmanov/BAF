@@ -1,0 +1,69 @@
+.Products {
+  background: #e5e5e5;
+}
+
+.Products .container {
+  padding: 45px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  border: 0.886256px solid #aecbcd;
+  border-radius: 44.3128px;
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.products {
+  text-decoration: none;
+  padding: 9px 18px;
+  transition:0.3s
+}
+
+.Products-info {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 18px;
+  color: #5b8a8d;
+}
+
+.products1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9526px;
+  /* line-height: 16px; */
+  color: rgba(91, 138, 141, 0.5);
+  padding: 9px 18px;
+}
+
+.products1:focus {
+  background: #5b8a8d;
+  border-radius: 44.3128px;
+  color: #FFFFFF;
+  padding: 9px 18px;
+}
+
+.products2{
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9526px;
+  /* line-height: 16px; */
+  color: rgba(91, 138, 141, 0.5);
+  padding: 9px 18px;
+}
+
+.products2:focus{
+  background: #5b8a8d;
+  border-radius: 44.3128px;
+  color: #FFFFFF;
+  padding: 9px 18px;
+}
