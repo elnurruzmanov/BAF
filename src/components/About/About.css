@@ -1,0 +1,117 @@
+.About {
+  padding: 20px 20px 0px 20px;
+  background-color: #5b8a8d;
+}
+
+.About .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.About-images {
+  width: 65%;
+}
+
+.images {
+  background-image: url("../../images/rectangle.png");
+  background-repeat: no-repeat;
+  background-position: right 1px bottom 100px;
+}
+
+.About-info {
+  width: 35%;
+}
+
+.About_info-title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.About-images2 {
+  background-image: url("../../images/silk-scarf.png");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}
+
+.About_info-text {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background: #2d5a5e;
+  border-radius: 50px;
+  padding: 0px 0px;
+  width: 180px;
+}
+
+.buttons::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: $color; */
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.buttons::before{
+  content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    /* background-color: darken($color, 15%); */
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.buttons::before{
+  width: 100%;
+}
+
+.buttons:hover{
+  cursor:pointer
+}
+
+.btn {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  background-color: #2d5a5e;
+  background-color: none;
+  margin-left: 20px;
+  border:none;
+  overflow: hidden;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.btn-image {
+  background: #ffebe2;
+  border-radius: 50px;
+  padding: 15px;
+}
