@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 //image
 import Scarf from "../../images/scarf.png";
-import Arrow from "../../images/arrow.png"
+import Arrow from "../../images/arrow.png";
 
 const About = () => {
   return (
@@ -17,8 +17,11 @@ const About = () => {
             World Textile Marketing Agency основан в 2019 году молодыми
             специалистами в области маркетинга, текстильной индустрии,
             веб-программирования, организации мероприятий, дизайна одежды и
-            полиграфии. Наша команда специализируется в продвижении предприятий
-            легкой промышленности на зарубежные рынки.
+            полиграфии.
+            <p className="span-text">
+              Наша команда специализируется в продвижении предприятий легкой
+              промышленности на зарубежные рынки.
+            </p>
           </p>
           <div className="buttons">
             <img src={Arrow} alt="" className="btn-image" />
